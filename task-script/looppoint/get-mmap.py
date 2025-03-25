@@ -41,7 +41,7 @@ if not gem5_binary_path.exists():
 if not checkpoint_path.exists():
     raise FileNotFoundError(f"checkpoint path not found at {checkpoint_path}")
 
-m5out_output_dir = Path(m5out_output_dir/f"detailed-baseline/{arch}")
+m5out_output_dir = Path(m5out_output_dir/f"looppoint/get-mmap/{arch}")
 m5out_output_dir.mkdir(parents=True, exist_ok=True)
 
 all_run_balls = []
@@ -52,7 +52,7 @@ for bench in benchmarks:
         gem5_binary_path.as_posix(),
         "-re",
         "--outdir", bench_m5out_output_dir.as_posix(),
-        f"{workdir.as_posix()}/script/detailed-baseline.py",
+        f"{workdir.as_posix()}/script/looppoint/get-mmap.py",
         "--checkpoint-path", checkpoint_path.as_posix(),
         "--benchmark", bench,
         "--size", size,

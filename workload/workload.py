@@ -65,9 +65,46 @@ def get_base_workload(arch: str):
 
 def get_specific_benchmark_workload(arch: str, benchmark: str, size: str, num_threads: int):
     workload = get_workload_resource(arch)
-    workload.set_parameter("readfile_contents", f"export LD_LIBRARY_PATH=/usr/lib/llvm-18/lib;export OMP_NUM_THREADS={num_threads};echo 12345 | sudo -S /home/gem5/nugget-protocol-NPB/cbuild/llvm-exec/m5_naive_exe_{benchmark}_{size}/m5_naive_exe_{benchmark}_{size}; sleep 5;")
+    workload.set_parameter("readfile_contents", 
+f"""#!/bin/bash
+export LD_LIBRARY_PATH=/usr/lib/llvm-18/lib
+export OMP_NUM_THREADS={num_threads}
+echo 12345 | sudo -SE bash -c '/home/gem5/nugget-protocol-NPB/cbuild/llvm-exec/m5_naive_exe_{benchmark}_{size}/m5_naive_exe_{benchmark}_{size}'
+sleep 5
+"""
+    )
     return workload
 
 def start_from_after_checkpoint(workload: WorkloadResource, checkpoint: Path):
     workload.set_parameter("checkpoint", checkpoint)
+    return workload
+
+def get_specific_benchmark_mmap_workload(arch: str, benchmark: str, size: str, num_threads: int):
+    workload = get_workload_resource(arch)
+    workload.set_parameter("readfile_contents", 
+f"""#!/bin/bash
+
+# Set environment variables and run the executable in the background
+export LD_LIBRARY_PATH=/usr/lib/llvm-18/lib
+export OMP_NUM_THREADS={num_threads}
+/home/gem5/nugget-protocol-NPB/cbuild/llvm-exec/m5_naive_exe_{benchmark}_{size}/m5_naive_exe_{benchmark}_{size} &
+
+# Capture the process ID of the background process
+PID=$!
+
+sleep 0.1
+
+# Stop the process
+kill -SIGSTOP $PID
+
+# Print the process ID
+echo "PID is $PID"
+
+# Use sudo to read the process's memory map and write it to a file
+echo 12345 | sudo -S cat /proc/$PID/maps > process_map.txt
+
+# Use m5 to write the file and then exit
+m5 writefile process_map.txt
+m5 exit
+""")
     return workload
