@@ -35,7 +35,7 @@ elif arch == "x86":
     requires(isa_required=ISA.X86, coherence_protocol_required=CoherenceProtocol.MESI_TWO_LEVEL)
     from boards.x86_board import *
     checkpoint_output_dir = Path(checkpoint_output_dir/f"x86-after-boot-cpt")
-    board = get_functional_board()
+    board = get_KVM_board()
 
 def handel_exit(cpt_output_dir):
     print("Encounter Kernel gem5-bridge exit event, ignore it.")
