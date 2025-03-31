@@ -1,0 +1,594 @@
+{
+    "mg": {
+        "arm": {
+            "source_address_range": [
+                "0x5555550000",
+                "0x5555615000"
+            ],
+            "restricted_address_ranges": [
+                [
+                    "0x7ff7bc0000",
+                    "0x7ff7bc8000"
+                ],
+                [
+                    "0x7ff7bc8000",
+                    "0x7ff7bdf000"
+                ],
+                [
+                    "0x7ff7bdf000",
+                    "0x7ff7be0000"
+                ],
+                [
+                    "0x7ff7be0000",
+                    "0x7ff7be1000"
+                ],
+                [
+                    "0x7ff7db0000",
+                    "0x7ff7ed1000"
+                ],
+                [
+                    "0x7ff7ed1000",
+                    "0x7ff7eee000"
+                ],
+                [
+                    "0x7ff7eee000",
+                    "0x7ff7ef0000"
+                ],
+                [
+                    "0x7ff7ef0000",
+                    "0x7ff7ef6000"
+                ]
+            ]
+        },
+        "x86": {
+            "source_address_range": [
+                "0x55555555c000",
+                "0x555555607000"
+            ],
+            "restricted_address_ranges": [
+                [
+                    "0x7ffff7b86000",
+                    "0x7ffff7b8e000"
+                ],
+                [
+                    "0x7ffff7b8e000",
+                    "0x7ffff7b8f000"
+                ],
+                [
+                    "0x7ffff7b8f000",
+                    "0x7ffff7b90000"
+                ],
+                [
+                    "0x7ffff7da4000",
+                    "0x7ffff7ec0000"
+                ],
+                [
+                    "0x7ffff7ec0000",
+                    "0x7ffff7ec1000"
+                ],
+                [
+                    "0x7ffff7ec1000",
+                    "0x7ffff7ec7000"
+                ]
+            ]
+        }
+    },
+    "cg": {
+        "arm": {
+            "source_address_range": [
+                "0x5555550000",
+                "0x5555612000"
+            ],
+            "restricted_address_ranges": [
+                [
+                    "0x7ff7bc0000",
+                    "0x7ff7bc8000"
+                ],
+                [
+                    "0x7ff7bc8000",
+                    "0x7ff7bdf000"
+                ],
+                [
+                    "0x7ff7bdf000",
+                    "0x7ff7be0000"
+                ],
+                [
+                    "0x7ff7be0000",
+                    "0x7ff7be1000"
+                ],
+                [
+                    "0x7ff7db0000",
+                    "0x7ff7ed1000"
+                ],
+                [
+                    "0x7ff7ed1000",
+                    "0x7ff7eee000"
+                ],
+                [
+                    "0x7ff7eee000",
+                    "0x7ff7ef0000"
+                ],
+                [
+                    "0x7ff7ef0000",
+                    "0x7ff7ef6000"
+                ]
+            ]
+        },
+        "x86": {
+            "source_address_range": [
+                "0x55555555c000",
+                "0x555555601000"
+            ],
+            "restricted_address_ranges": [
+                [
+                    "0x7ffff7b86000",
+                    "0x7ffff7b8e000"
+                ],
+                [
+                    "0x7ffff7b8e000",
+                    "0x7ffff7b8f000"
+                ],
+                [
+                    "0x7ffff7b8f000",
+                    "0x7ffff7b90000"
+                ],
+                [
+                    "0x7ffff7da4000",
+                    "0x7ffff7ec0000"
+                ],
+                [
+                    "0x7ffff7ec0000",
+                    "0x7ffff7ec1000"
+                ],
+                [
+                    "0x7ffff7ec1000",
+                    "0x7ffff7ec7000"
+                ]
+            ]
+        }
+    },
+    "ft": {
+        "arm": {
+            "source_address_range": [
+                "0x5555550000",
+                "0x5555613000"
+            ],
+            "restricted_address_ranges": [
+                [
+                    "0x7ff7bc0000",
+                    "0x7ff7bc8000"
+                ],
+                [
+                    "0x7ff7bc8000",
+                    "0x7ff7bdf000"
+                ],
+                [
+                    "0x7ff7bdf000",
+                    "0x7ff7be0000"
+                ],
+                [
+                    "0x7ff7be0000",
+                    "0x7ff7be1000"
+                ],
+                [
+                    "0x7ff7db0000",
+                    "0x7ff7ed1000"
+                ],
+                [
+                    "0x7ff7ed1000",
+                    "0x7ff7eee000"
+                ],
+                [
+                    "0x7ff7eee000",
+                    "0x7ff7ef0000"
+                ],
+                [
+                    "0x7ff7ef0000",
+                    "0x7ff7ef6000"
+                ]
+            ]
+        },
+        "x86": {
+            "source_address_range": [
+                "0x55555555c000",
+                "0x555555604000"
+            ],
+            "restricted_address_ranges": [
+                [
+                    "0x7ffff7b86000",
+                    "0x7ffff7b8e000"
+                ],
+                [
+                    "0x7ffff7b8e000",
+                    "0x7ffff7b8f000"
+                ],
+                [
+                    "0x7ffff7b8f000",
+                    "0x7ffff7b90000"
+                ],
+                [
+                    "0x7ffff7da4000",
+                    "0x7ffff7ec0000"
+                ],
+                [
+                    "0x7ffff7ec0000",
+                    "0x7ffff7ec1000"
+                ],
+                [
+                    "0x7ffff7ec1000",
+                    "0x7ffff7ec7000"
+                ]
+            ]
+        }
+    },
+    "ep": {
+        "arm": {
+            "source_address_range": [
+                "0x5555550000",
+                "0x555560a000"
+            ],
+            "restricted_address_ranges": [
+                [
+                    "0x7ff7bc0000",
+                    "0x7ff7bc8000"
+                ],
+                [
+                    "0x7ff7bc8000",
+                    "0x7ff7bdf000"
+                ],
+                [
+                    "0x7ff7bdf000",
+                    "0x7ff7be0000"
+                ],
+                [
+                    "0x7ff7be0000",
+                    "0x7ff7be1000"
+                ],
+                [
+                    "0x7ff7db0000",
+                    "0x7ff7ed1000"
+                ],
+                [
+                    "0x7ff7ed1000",
+                    "0x7ff7eee000"
+                ],
+                [
+                    "0x7ff7eee000",
+                    "0x7ff7ef0000"
+                ],
+                [
+                    "0x7ff7ef0000",
+                    "0x7ff7ef6000"
+                ]
+            ]
+        },
+        "x86": {
+            "source_address_range": [
+                "0x55555555c000",
+                "0x5555555f8000"
+            ],
+            "restricted_address_ranges": [
+                [
+                    "0x7ffff7b86000",
+                    "0x7ffff7b8e000"
+                ],
+                [
+                    "0x7ffff7b8e000",
+                    "0x7ffff7b8f000"
+                ],
+                [
+                    "0x7ffff7b8f000",
+                    "0x7ffff7b90000"
+                ],
+                [
+                    "0x7ffff7da4000",
+                    "0x7ffff7ec0000"
+                ],
+                [
+                    "0x7ffff7ec0000",
+                    "0x7ffff7ec1000"
+                ],
+                [
+                    "0x7ffff7ec1000",
+                    "0x7ffff7ec7000"
+                ]
+            ]
+        }
+    },
+    "lu": {
+        "arm": {
+            "source_address_range": [
+                "0x5555550000",
+                "0x5555623000"
+            ],
+            "restricted_address_ranges": [
+                [
+                    "0x7ff7bc0000",
+                    "0x7ff7bc8000"
+                ],
+                [
+                    "0x7ff7bc8000",
+                    "0x7ff7bdf000"
+                ],
+                [
+                    "0x7ff7bdf000",
+                    "0x7ff7be0000"
+                ],
+                [
+                    "0x7ff7be0000",
+                    "0x7ff7be1000"
+                ],
+                [
+                    "0x7ff7db0000",
+                    "0x7ff7ed1000"
+                ],
+                [
+                    "0x7ff7ed1000",
+                    "0x7ff7eee000"
+                ],
+                [
+                    "0x7ff7eee000",
+                    "0x7ff7ef0000"
+                ],
+                [
+                    "0x7ff7ef0000",
+                    "0x7ff7ef6000"
+                ]
+            ]
+        },
+        "x86": {
+            "source_address_range": [
+                "0x55555555c000",
+                "0x55555561d000"
+            ],
+            "restricted_address_ranges": [
+                [
+                    "0x7ffff7b86000",
+                    "0x7ffff7b8e000"
+                ],
+                [
+                    "0x7ffff7b8e000",
+                    "0x7ffff7b8f000"
+                ],
+                [
+                    "0x7ffff7b8f000",
+                    "0x7ffff7b90000"
+                ],
+                [
+                    "0x7ffff7da4000",
+                    "0x7ffff7ec0000"
+                ],
+                [
+                    "0x7ffff7ec0000",
+                    "0x7ffff7ec1000"
+                ],
+                [
+                    "0x7ffff7ec1000",
+                    "0x7ffff7ec7000"
+                ]
+            ]
+        }
+    },
+    "sp": {
+        "arm": {
+            "source_address_range": [
+                "0x5555550000",
+                "0x5555622000"
+            ],
+            "restricted_address_ranges": [
+                [
+                    "0x7ff7bc0000",
+                    "0x7ff7bc8000"
+                ],
+                [
+                    "0x7ff7bc8000",
+                    "0x7ff7bdf000"
+                ],
+                [
+                    "0x7ff7bdf000",
+                    "0x7ff7be0000"
+                ],
+                [
+                    "0x7ff7be0000",
+                    "0x7ff7be1000"
+                ],
+                [
+                    "0x7ff7db0000",
+                    "0x7ff7ed1000"
+                ],
+                [
+                    "0x7ff7ed1000",
+                    "0x7ff7eee000"
+                ],
+                [
+                    "0x7ff7eee000",
+                    "0x7ff7ef0000"
+                ],
+                [
+                    "0x7ff7ef0000",
+                    "0x7ff7ef6000"
+                ]
+            ]
+        },
+        "x86": {
+            "source_address_range": [
+                "0x55555555c000",
+                "0x55555561a000"
+            ],
+            "restricted_address_ranges": [
+                [
+                    "0x7ffff7b86000",
+                    "0x7ffff7b8e000"
+                ],
+                [
+                    "0x7ffff7b8e000",
+                    "0x7ffff7b8f000"
+                ],
+                [
+                    "0x7ffff7b8f000",
+                    "0x7ffff7b90000"
+                ],
+                [
+                    "0x7ffff7da4000",
+                    "0x7ffff7ec0000"
+                ],
+                [
+                    "0x7ffff7ec0000",
+                    "0x7ffff7ec1000"
+                ],
+                [
+                    "0x7ffff7ec1000",
+                    "0x7ffff7ec7000"
+                ]
+            ]
+        }
+    },
+    "bt": {
+        "arm": {
+            "source_address_range": [
+                "0x5555550000",
+                "0x5555621000"
+            ],
+            "restricted_address_ranges": [
+                [
+                    "0x7ff7bc0000",
+                    "0x7ff7bc8000"
+                ],
+                [
+                    "0x7ff7bc8000",
+                    "0x7ff7bdf000"
+                ],
+                [
+                    "0x7ff7bdf000",
+                    "0x7ff7be0000"
+                ],
+                [
+                    "0x7ff7be0000",
+                    "0x7ff7be1000"
+                ],
+                [
+                    "0x7ff7db0000",
+                    "0x7ff7ed1000"
+                ],
+                [
+                    "0x7ff7ed1000",
+                    "0x7ff7eee000"
+                ],
+                [
+                    "0x7ff7eee000",
+                    "0x7ff7ef0000"
+                ],
+                [
+                    "0x7ff7ef0000",
+                    "0x7ff7ef6000"
+                ]
+            ]
+        },
+        "x86": {
+            "source_address_range": [
+                "0x55555555c000",
+                "0x555555618000"
+            ],
+            "restricted_address_ranges": [
+                [
+                    "0x7ffff7b86000",
+                    "0x7ffff7b8e000"
+                ],
+                [
+                    "0x7ffff7b8e000",
+                    "0x7ffff7b8f000"
+                ],
+                [
+                    "0x7ffff7b8f000",
+                    "0x7ffff7b90000"
+                ],
+                [
+                    "0x7ffff7da4000",
+                    "0x7ffff7ec0000"
+                ],
+                [
+                    "0x7ffff7ec0000",
+                    "0x7ffff7ec1000"
+                ],
+                [
+                    "0x7ffff7ec1000",
+                    "0x7ffff7ec7000"
+                ]
+            ]
+        }
+    },
+    "is": {
+        "arm": {
+            "source_address_range": [
+                "0x5555550000",
+                "0x5555554000"
+            ],
+            "restricted_address_ranges": [
+                [
+                    "0x7ff7bc0000",
+                    "0x7ff7bc8000"
+                ],
+                [
+                    "0x7ff7bc8000",
+                    "0x7ff7bdf000"
+                ],
+                [
+                    "0x7ff7bdf000",
+                    "0x7ff7be0000"
+                ],
+                [
+                    "0x7ff7be0000",
+                    "0x7ff7be1000"
+                ],
+                [
+                    "0x7ff7db0000",
+                    "0x7ff7ed1000"
+                ],
+                [
+                    "0x7ff7ed1000",
+                    "0x7ff7eee000"
+                ],
+                [
+                    "0x7ff7eee000",
+                    "0x7ff7ef0000"
+                ],
+                [
+                    "0x7ff7ef0000",
+                    "0x7ff7ef6000"
+                ]
+            ]
+        },
+        "x86": {
+            "source_address_range": [
+                "0x555555555000",
+                "0x555555558000"
+            ],
+            "restricted_address_ranges": [
+                [
+                    "0x7ffff7b82000",
+                    "0x7ffff7b8a000"
+                ],
+                [
+                    "0x7ffff7b8a000",
+                    "0x7ffff7b8b000"
+                ],
+                [
+                    "0x7ffff7b8b000",
+                    "0x7ffff7b8c000"
+                ],
+                [
+                    "0x7ffff7da4000",
+                    "0x7ffff7ec0000"
+                ],
+                [
+                    "0x7ffff7ec0000",
+                    "0x7ffff7ec1000"
+                ],
+                [
+                    "0x7ffff7ec1000",
+                    "0x7ffff7ec7000"
+                ]
+            ]
+        }
+    }
+}

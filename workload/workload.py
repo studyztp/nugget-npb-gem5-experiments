@@ -69,7 +69,31 @@ def get_specific_benchmark_workload(arch: str, benchmark: str, size: str, num_th
 f"""#!/bin/bash
 export LD_LIBRARY_PATH=/usr/lib/llvm-18/lib
 export OMP_NUM_THREADS={num_threads}
-echo 12345 | sudo -SE bash -c '/home/gem5/nugget-protocol-NPB/cbuild/llvm-exec/m5_naive_exe_{benchmark}_{size}/m5_naive_exe_{benchmark}_{size}'
+
+# Disable ASLR
+echo 12345 | sudo -S bash -c '
+  echo 0 > /proc/sys/kernel/randomize_va_space
+  echo -n "ASLR setting: "
+  cat /proc/sys/kernel/randomize_va_space
+'
+
+echo "ASLR disabled, confirming..."
+
+# Confirm it was changed
+cat /proc/sys/kernel/randomize_va_space
+
+echo "Running the benchmark with the following parameters:"
+echo "Benchmark: {benchmark}"
+echo "Size: {size}"
+echo "Number of threads: {num_threads}"
+echo "LD_LIBRARY_PATH: $LD_LIBRARY_PATH"
+echo "OMP_NUM_THREADS: $OMP_NUM_THREADS"
+echo "Running the benchmark..."
+
+# Run the benchmark
+sudo -SE bash -c '/home/gem5/nugget-protocol-NPB/cbuild/llvm-exec/m5_naive_exe_{benchmark}_{size}/m5_naive_exe_{benchmark}_{size}'
+
+# Optional: give time to cool down or simulate pause
 sleep 5
 """
     )
@@ -87,6 +111,19 @@ f"""#!/bin/bash
 # Set environment variables and run the executable in the background
 export LD_LIBRARY_PATH=/usr/lib/llvm-18/lib
 export OMP_NUM_THREADS={num_threads}
+
+# Disable ASLR
+echo 12345 | sudo -S bash -c '
+  echo 0 > /proc/sys/kernel/randomize_va_space
+  echo -n "ASLR setting: "
+  cat /proc/sys/kernel/randomize_va_space
+'
+
+echo "ASLR disabled, confirming..."
+
+# Confirm it was changed
+cat /proc/sys/kernel/randomize_va_space
+
 /home/gem5/nugget-protocol-NPB/cbuild/llvm-exec/m5_naive_exe_{benchmark}_{size}/m5_naive_exe_{benchmark}_{size} &
 
 # Capture the process ID of the background process
