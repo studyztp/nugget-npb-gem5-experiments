@@ -5,3 +5,6 @@
 [submodule "gem5"]
 	path = gem5
 	url = git@github.com:gem5/gem5.git
+[submodule "nugget_util"]
+	path = nugget_util
+	url = git@github.com:studyztp/nugget_util.git
